@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#521b2b">
+<meta name="description" content="Prince Silver & Gold — Discover timeless elegance in gold and silver jewellery.">
+<title>Prince Silver & Gold | Timeless Elegance</title>
+
+<style>
+:root {
+  --burgundy: #521b2b;
+  --navy: #101d35;
+  --gold: #c9a45c;
+  --cream: #faf7f0;
+  --text: #252525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--burgundy);
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--gold);
+}
+
+.logo {
+  color: var(--gold);
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  display: block;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover { color: var(--gold); }
+
+.hero {
+  min-height: 510px;
+  padding: 75px 7%;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(16,29,53,.97), rgba(16,29,53,.75)),
+    url("https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+  color: white;
+}
+
+.hero-content { max-width: 580px; }
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 6vw, 65px);
+  font-weight: normal;
+  line-height: 1.15;
+  margin: 20px 0;
+}
+
+.hero p {
+  color: #e1e3e8;
+  max-width: 430px;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--gold);
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid var(--gold);
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--gold);
+}
+
+section { padding: 65px 7%; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  color: var(--burgundy);
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.section-heading p {
+  color: #777;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.product {
+  background: white;
+  border: 1px solid #eee6d8;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.product img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background: #eee8df;
+}
+
+.product h3 {
+  font-family: Georgia, serif;
+  color: var(--navy);
+  font-size: 21px;
+  font-weight: normal;
+  margin: 18px 10px 5px;
+}
+
+.product p {
+  font-size: 13px;
+  color: #777;
+  padding: 0 12px;
+}
+
+.about {
+  background: #f0e8dc;
+  text-align: center;
+}
+
+.about p {
+  max-width: 650px;
+  margin: 15px auto 0;
+  color: #555;
+}
+
+.contact {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: Georgia, serif;
+  color: var(--gold);
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.contact p {
+  color: #ddd;
+  margin: 12px 0 25px;
+}
+
+footer {
+  background: #0a1324;
+  text-align: center;
+  padding: 22px 15px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+footer strong { color: var(--gold); }
+
+@media (max-width: 650px) {
+  header { justify-content: center; text-align: center; }
+  nav { justify-content: center; gap: 16px; }
+  .hero { min-height: 430px; padding: 65px 7%; }
+  .products { grid-template-columns: 1fr; }
+  .product img { height: 280px; }
+  section { padding: 48px 6%; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="#" class="logo" style="text-decoration:none">
+    PRINCE SILVER & GOLD
+    <span>TIMELESS ELEGANCE</span>
+  </a>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">Elegance in every detail</div>
+      <h1>Jewellery that tells your story.</h1>
+      <p>
+        Discover timeless beauty with our gold and silver jewellery
+        collections, crafted to celebrate life's special moments.
+      </p>
+      <a class="button" href="#collections">EXPLORE COLLECTIONS</a>
+    </div>
+  </section>
+
+  <section id="collections">
+    <div class="section-heading">
+      <h2>Our Collections</h2>
+      <p>Classic beauty. Lasting memories.</p>
+    </div>
+
+    <div class="products">
+      <article class="product">
+        <img
+          src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"
+          alt="Elegant gold jewellery" loading="lazy">
+        <h3>Gold Jewellery</h3>
+        <p>Timeless designs for every occasion.</p>
+      </article>
+
+      <article class="product">
+        <img
+          src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=80"
+          alt="Silver jewellery collection" loading="lazy">
+        <h3>Silver Jewellery</h3>
+        <p>Refined simplicity for everyday elegance.</p>
+      </article>
+
+      <article class="product">
+        <img
+          src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80"
+          alt="Decorative jewellery ring" loading="lazy">
+        <h3>Special Occasions</h3>
+        <p>Beautiful pieces for memorable moments.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-heading">
+      <h2>Our Story</h2>
+      <p>Tradition meets timeless design.</p>
+    </div>
+    <p>
+      At Prince Silver & Gold, we believe jewellery is more than an
+      accessory. It represents memories, celebrations and personal style.
+      Explore our collections and find something that feels uniquely yours.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Visit Prince Silver & Gold</h2>
+    <p>Looking for your next favourite piece? Get in touch with us.</p>
+
+    <!-- Replace # with your WhatsApp link when ready -->
+    <a class="button" href="#"
+       onclick="alert('Please add your shop WhatsApp number to activate this link.'); return false;">
+       CONTACT US
+    </a>
+  </section>
+</main>
+
+<footer>
+  <strong>PRINCE SILVER & GOLD</strong>
+  <p>© <span id="year"></span> Prince Silver & Gold. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
