@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prince Silver & Gold | Jewellery</title>
+<meta name="description" content="Prince Silver & Gold: silver and gold rings, necklaces, earrings, bangles and pearls.">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#home"><img src="assets/logo-mark.png" alt="" width="44" height="44"><span>Prince Silver &amp; Gold</span></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav">
+    <a href="#collection">Collection</a>
+    <a href="#why">Why us</a>
+    <a href="#visit">Visit</a>
+    <a class="pill" href="#visit">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Silver and gold, made to be worn for life.</h1>
+    <p>Rings, necklaces, earrings and bangles for weddings, festivals and every day. Hallmarked metal, honest weights, fair prices.</p>
+    <div class="cta">
+      <a class="btn light" href="#collection">Browse the collection</a>
+      <a class="btn ghost" href="#visit">Visit the shop</a>
+    </div>
+  </div>
+  <img class="hero-mark" src="assets/logo-mark.png" alt="Prince Silver & Gold pearl monogram" width="420" height="420">
+</section>
+
+<main>
+<section class="section" id="collection">
+  <h2>Our collection</h2>
+  <p class="lead">Pick a metal or a piece. Tap Enquire and we reply on WhatsApp with weight, price and photos.</p>
+  <div class="filters" role="group" aria-label="Filter products">
+    <button class="chip on" data-f="all">All</button>
+    <button class="chip" data-f="gold">Gold</button>
+    <button class="chip" data-f="silver">Silver</button>
+    <button class="chip" data-f="pearl">Pearl</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="band" id="why">
+  <h2>Why customers return</h2>
+  <div class="why">
+    <div><h3>Hallmarked metal</h3><p>Every gold and silver piece carries its purity mark, and we show it before you buy.</p></div>
+    <div><h3>Weighed in front of you</h3><p>Weight, rate and making charges are written on one slip. No surprises at the counter.</p></div>
+    <div><h3>Exchange and repair</h3><p>Bring old jewellery to exchange, resize or polish. We quote before we start.</p></div>
+    <div><h3>Custom orders</h3><p>Share a design or a photo. We make it in your size and budget.</p></div>
+  </div>
+</section>
+
+<section class="section" id="visit">
+  <h2>Visit or contact us</h2>
+  <div class="visit">
+    <div class="card">
+      <h3>Shop</h3>
+      <p>Prince Silver &amp; Gold<br>Your street address, City, PIN</p>
+      <h3>Hours</h3>
+      <p>Mon to Sat: 10:30 am to 8:30 pm<br>Sunday: by appointment</p>
+      <h3>Call or message</h3>
+      <p><a href="tel:+910000000000">+91 00000 00000</a></p>
+      <a class="btn solid" id="wa-main" href="#">Chat on WhatsApp</a>
+    </div>
+    <form class="card" id="form">
+      <h3>Send an enquiry</h3>
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>What are you looking for?<textarea name="msg" rows="4" required placeholder="e.g. Gold chain, 22k, around 10 g"></textarea></label>
+      <button class="btn solid" type="submit">Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="assets/logo-full.png" alt="Prince Silver & Gold" width="320">
+  <p>&copy; <span id="yr"></span> Prince Silver &amp; Gold. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
