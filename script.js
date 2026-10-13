@@ -1,5 +1,5 @@
 // ====== EDIT THESE ======
-const WHATSAPP = "+9196355 02116"; // country code + number, no + or spaces
+const WHATSAPP = "+919635502116"; // country code + number, no + or spaces
 const PRODUCTS = [
   {n:"Gold Ring",m:"gold",d:"22k and 18k, plain and stone set",i:"ring"},
   {n:"Gold Chain",m:"gold",d:"Rope, box and curb styles",i:"chain"},
